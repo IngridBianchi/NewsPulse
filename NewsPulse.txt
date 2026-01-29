@@ -6,14 +6,24 @@ newspulse/
 │       ├── pages/
 │       └── services/     # llamadas a la API
 ├── backend/              # Node.js + Express
-│   ├── controllers/
-│   ├── routes/
-│   ├── services/         # lógica de negocio
-│   ├── models/           # esquema MongoDB
-│   └── utils/            # helpers, análisis de sentimiento
+    ├── src/
+        ├── config/           # conexión a MongoDB y configuración
+        ├── models/           # esquemas de MongoDB
+        ├── routes/           # rutas de la API
+        ├── controllers/      # lógica de control
+        ├── services/         # lógica de negocio
+        ├── utils/            # helpers (ej. análisis de sentimiento)
+        └── index.js          # punto de entrada del servidor
 ├── reports/              # informes generados automáticamente
 ├── scripts/              # automatización (cron, Lambda)
 ├── docs/                 # documentación técnica
 ├── .github/workflows/    # GitHub Actions
 ├── README.md
 └── package.json
+
+
+DB MongoDB Atlas
+bianchiingrid204_db_user
+5BH5r7Dj06YoR3qh
+
+mongodb+srv://bianchiingrid204_db_user:<5BH5r7Dj06YoR3qh>@clusternewspulse.gg8ev1t.mongodb.net/?appName=ClusterNewsPulse
