@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
+const newsRoutes = require('./routes/news');
 
 dotenv.config();
 connectDB();
@@ -9,6 +10,8 @@ connectDB();
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+app.use('/api/news', newsRoutes);
 
 app.get('/', (req, res) => {
   res.send('NewsPulse API funcionando 🚀');
