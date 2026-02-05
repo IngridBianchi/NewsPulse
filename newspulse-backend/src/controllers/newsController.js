@@ -1,19 +1,32 @@
 const News = require("../models/News");
 const { validationResult } = require("express-validator");
+const { generateSummary } = require("../services/ai");
 
 // Crear noticia
-exports.createNews = async (req, res) => {
+exports.createNews = async (req, res, next) => {
+  // Validación de campos
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
-    return res.status(400).json({ errors: errors.array() });
+    return res.status(400).json({ success: false, errors: errors.array() });
   }
 
   try {
-    const news = new News(req.body);
+    const { title, content } = req.body;
+
+    // Generar resumen con IA
+    const summary = await generateSummary(content);
+
+    const news = new News({ title, content, summary });
     await news.save();
-    res.status(201).json(news);
+
+    res.status(201).json({ success: true, data: news });
   } catch (error) {
-    res.status(400).json({ error: error.message });
+    console.error("Error en createNews:", error.message);
+    res.status(500).json({
+      success: false,
+      message: "Error interno al crear la noticia",
+      error: error.message,
+    });
   }
 };
 
