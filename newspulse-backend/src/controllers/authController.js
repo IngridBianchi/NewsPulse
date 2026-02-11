@@ -1,56 +1,34 @@
-const User = require('../models/User');
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
+import { validationResult } from "express-validator";
+import * as authService from "../services/authService.js";
 
+export async function register(req, res, next) {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ success: false, errors: errors.array() });
+  }
 
-// Registro
-exports.register = async (req, res, next) => {
   try {
     const { name, email, password } = req.body;
-
-    const userExists = await User.findOne({ email });
-    if (userExists) {
-      const error = new Error("El usuario ya existe");
-      error.status = 400;
-      return next(error);
-    }
-
-    const user = new User({ name, email, password });
-    await user.save();
-
-    res.status(201).json({ message: "Usuario registrado correctamente" });
+    const user = await authService.registerUser({ name, email, password });
+    res.status(201).json({ success: true, data: user });
   } catch (error) {
+    console.error("Error en register:", error.message);
     next(error);
   }
-};
+}
 
-// Login
-exports.login = async (req, res, next) => {
+export async function login(req, res, next) {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ success: false, errors: errors.array() });
+  }
+
   try {
     const { email, password } = req.body;
-
-    const user = await User.findOne({ email });
-    if (!user) {
-      const error = new Error("Credenciales inválidas");
-      error.status = 400;
-      return next(error);
-    }
-
-    const isMatch = await bcrypt.compare(password, user.password);
-    if (!isMatch) {
-      const error = new Error("Credenciales inválidas");
-      error.status = 400;
-      return next(error);
-    }
-
-    const token = jwt.sign(
-      { id: user._id, email: user.email },
-      process.env.JWT_SECRET,
-      { expiresIn: '1h' }
-    );
-
-    res.json({ token });
+    const { user, token } = await authService.loginUser({ email, password });
+    res.json({ success: true, data: { user, token } });
   } catch (error) {
+    console.error("Error en login:", error.message);
     next(error);
   }
-};
+}

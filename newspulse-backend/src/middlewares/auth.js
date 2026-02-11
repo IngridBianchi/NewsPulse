@@ -1,7 +1,7 @@
-const jwt = require('jsonwebtoken');
+import jwt from "jsonwebtoken";
 
-function auth(req, res, next) {
-  const token = req.header('Authorization')?.replace('Bearer ', '');
+export default function auth(req, res, next) {
+  const token = req.header("Authorization")?.replace("Bearer ", "");
   if (!token) {
     const error = new Error("Acceso denegado, token requerido");
     error.status = 401;
@@ -18,5 +18,3 @@ function auth(req, res, next) {
     next(error);
   }
 }
-
-module.exports = auth;

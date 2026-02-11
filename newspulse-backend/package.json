@@ -9,9 +9,8 @@
     "dev": "nodemon src/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ingrid Bianchi",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "@huggingface/inference": "^4.13.11",
     "bcryptjs": "^3.0.3",
@@ -25,6 +24,7 @@
     "node-fetch": "^2.7.0"
   },
   "devDependencies": {
+    "@gradio/client": "^2.0.4",
     "nodemon": "^3.1.11"
   }
 }
