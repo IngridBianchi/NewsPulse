@@ -24,9 +24,11 @@ jobs:
 
     - name: Install dependencies
       run: npm install
+      working-directory: newspulse-backend
 
     - name: Run tests
       run: npm test
+      working-directory: newspulse-backend
       env:
         MONGO_URI_TEST: ${{ secrets.MONGO_URI_TEST }}
         JWT_SECRET: ${{ secrets.JWT_SECRET }}
