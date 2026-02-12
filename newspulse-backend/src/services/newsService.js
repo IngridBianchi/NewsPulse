@@ -13,9 +13,14 @@ export async function createNews({ title, content, summary, author }) {
  */
 export async function getNews({ page = 1, limit = 10, search = "" }) {
   const query = search
-    ? { $or: [{ title: new RegExp(search, "i") }, { content: new RegExp(search, "i") }] }
+    ? {
+        $or: [
+          { title: { $regex: search, $options: "i" } },
+          { content: { $regex: search, $options: "i" } },
+        ],
+      }
     : {};
-
+    
   const skip = (page - 1) * limit;
 
   const [data, total] = await Promise.all([

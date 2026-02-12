@@ -3,6 +3,7 @@ import * as newsController from "../controllers/newsController.js";
 import { summarizeHandler } from "../controllers/summaryController.js";
 import { body } from "express-validator";
 import auth from "../middlewares/auth.js";
+import authorizeRoles from "../middlewares/role.js";
 
 const router = express.Router();
 
@@ -10,6 +11,7 @@ const router = express.Router();
 router.post(
   "/",
   auth,
+  authorizeRoles("admin", "editor"),
   [
     body("title").notEmpty().withMessage("El título es obligatorio"),
     body("content")
@@ -29,6 +31,7 @@ router.get("/:id", newsController.getNewsById);
 router.put(
   "/:id",
   auth,
+  authorizeRoles("admin", "editor"),
   [
     body("title").notEmpty().withMessage("El título es obligatorio"),
     body("content")
@@ -39,7 +42,7 @@ router.put(
 );
 
 // Eliminar noticia por ID
-router.delete("/:id", auth, newsController.deleteNews);
+router.delete("/:id", auth, authorizeRoles("admin"), newsController.deleteNews);
 
 // Endpoint independiente de IA (también accesible en /summarize)
 router.post("/summarize", summarizeHandler);

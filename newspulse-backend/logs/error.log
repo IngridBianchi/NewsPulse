@@ -1,0 +1,26 @@
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-12T13:50:16.516Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-12T13:50:18.105Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-12T14:02:39.432Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-12T14:02:39.573Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-12T14:31:05.321Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-12T14:31:07.307Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-12T14:34:05.225Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-12T14:34:07.192Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-12T17:57:33.562Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-12T17:57:35.540Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-12T18:34:43.750Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-12T18:34:45.968Z"}
+{"level":"error","message":"Client must be connected before running operations - POST /api/news","timestamp":"2026-02-12T18:40:14.620Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-12T19:13:08.776Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-12T19:13:08.823Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/000000000000000000000000","timestamp":"2026-02-12T19:13:08.950Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-12T19:13:11.057Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-12T19:13:11.135Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-12T19:13:11.206Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-12T19:28:21.939Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-12T19:28:21.969Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/698e29d5f792e549f957b7c5","timestamp":"2026-02-12T19:28:22.108Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/000000000000000000000000","timestamp":"2026-02-12T19:28:22.202Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-12T19:28:24.299Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-12T19:28:24.379Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-12T19:28:24.464Z"}

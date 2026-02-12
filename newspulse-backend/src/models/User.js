@@ -5,6 +5,11 @@ const userSchema = new mongoose.Schema({
   name: { type: String, required: true },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
+  role: {
+    type: String,
+    enum: ["admin", "editor", "lector"],
+    default: "lector", // por defecto, usuario lector
+    },
 });
 
 // Encriptar contraseña antes de guardar
