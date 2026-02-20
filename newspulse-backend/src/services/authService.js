@@ -7,7 +7,9 @@ import User from "../models/User.js";
 export async function registerUser({ name, email, password, role = "lector" }) {
   const existingUser = await User.findOne({ email });
   if (existingUser) {
-    throw new Error("El email ya está registrado");
+    const error = new Error("El email ya está registrado");
+  error.status = 400; 
+  throw error;
   }
 
   // 👇 Guardamos la contraseña en texto plano, el pre("save") la encripta
@@ -21,15 +23,21 @@ export async function registerUser({ name, email, password, role = "lector" }) {
 export async function loginUser({ email, password }) {
   const user = await User.findOne({ email });
   if (!user) {
-    throw new Error("Credenciales inválidas");
-  }
+  const error = new Error("Credenciales inválidas");
+  error.status = 401; 
+  throw error;
+}
+
 
   // 👇 Comparamos la contraseña ingresada con el hash guardado
   const bcrypt = await import("bcryptjs");
   const isMatch = await bcrypt.compare(password, user.password);
   if (!isMatch) {
-    throw new Error("Credenciales inválidas");
-  }
+  const error = new Error("Credenciales inválidas");
+  error.status = 401;
+  throw error;
+}
+
 
   const token = jwt.sign(
     { id: user._id, email: user.email, role: user.role },

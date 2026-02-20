@@ -10,7 +10,7 @@ let createdNewsId;
 beforeAll(async () => {
   await mongoose.connection.asPromise();
   await User.deleteMany({}); // limpiar base
-
+  
   // registrar usuario editor
   await request(app).post("/api/auth/register").send({
     name: "Editor User",
@@ -21,7 +21,10 @@ beforeAll(async () => {
 
   const resEditor = await request(app)
     .post("/api/auth/login")
+    .set("Content-Type", "application/json") // 👈 aseguramos JSON
     .send({ email: "editor@example.com", password: "password123" });
+  console.log("Editor login response:", resEditor.statusCode, resEditor.body);
+
   expect(resEditor.statusCode).toBe(200);
   token = resEditor.body.data.token;
 
@@ -35,6 +38,7 @@ beforeAll(async () => {
 
   const resLector = await request(app)
     .post("/api/auth/login")
+    .set("Content-Type", "application/json") // 👈 aseguramos JSON
     .send({ email: "lector@example.com", password: "password123" });
   expect(resLector.statusCode).toBe(200);
   lectorToken = resLector.body.data.token;
@@ -49,10 +53,13 @@ describe("News API", () => {
     const res = await request(app)
       .post("/api/news")
       .set("Authorization", `Bearer ${token}`)
+      .set("Content-Type", "application/json") // 👈 aseguramos JSON
       .send({
         title: "Nueva noticia",
         content: "Contenido de prueba con más de 10 caracteres",
       });
+    
+    console.log("Create news response:", res.statusCode, res.body);
 
     expect(res.statusCode).toBe(201);
     expect(res.body.success).toBe(true);
@@ -76,6 +83,7 @@ describe("News API", () => {
   it("no debería permitir crear noticia sin token", async () => {
     const res = await request(app)
       .post("/api/news")
+      .set("Content-Type", "application/json") // 👈 aseguramos JSON
       .send({
         title: "Noticia sin token",
         content: "Contenido inválido porque no hay token",
@@ -89,6 +97,7 @@ describe("News API", () => {
     const res = await request(app)
       .post("/api/news")
       .set("Authorization", `Bearer ${lectorToken}`)
+      .set("Content-Type", "application/json") // 👈 aseguramos JSON
       .send({
         title: "Noticia lector",
         content: "Contenido de prueba con rol lector",
@@ -102,6 +111,7 @@ describe("News API", () => {
     const res = await request(app)
       .post("/api/news")
       .set("Authorization", `Bearer ${token}`)
+      .set("Content-Type", "application/json") // 👈 aseguramos JSON
       .send({
         title: "",
         content: "Contenido válido pero título vacío",
@@ -115,6 +125,7 @@ describe("News API", () => {
     const res = await request(app)
       .put(`/api/news/${createdNewsId}`)
       .set("Authorization", `Bearer ${token}`)
+      .set("Content-Type", "application/json") // 👈 aseguramos JSON
       .send({
         title: "Noticia actualizada",
         content: "Contenido actualizado de la noticia",
@@ -139,7 +150,10 @@ describe("News API", () => {
     const res = await request(app)
       .put("/api/news/000000000000000000000000")
       .set("Authorization", `Bearer ${token}`)
-      .send({ title: "Update inexistente" });
+      .set("Content-Type", "application/json") // 👈 aseguramos JSON
+      .send({ title: "Update inexistente",
+  content: "Contenido inexistente con más de 10 caracteres"
+ });
 
     expect(res.statusCode).toBe(404);
     expect(res.body.success).toBe(false);

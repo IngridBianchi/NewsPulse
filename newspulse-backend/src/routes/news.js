@@ -42,7 +42,7 @@ router.put(
 );
 
 // Eliminar noticia por ID
-router.delete("/:id", auth, authorizeRoles("admin"), newsController.deleteNews);
+router.delete("/:id", auth, authorizeRoles("admin", "editor"), newsController.deleteNews);
 
 // Endpoint independiente de IA (también accesible en /summarize)
 router.post("/summarize", summarizeHandler);

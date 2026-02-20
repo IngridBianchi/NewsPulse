@@ -96,3 +96,253 @@
 {"level":"info","message":"::ffff:127.0.0.1 - - [12/Feb/2026:19:28:24 +0000] \"POST /api/auth/register HTTP/1.1\" 500 58 \"-\" \"-\"","timestamp":"2026-02-12T19:28:24.384Z"}
 {"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-12T19:28:24.464Z"}
 {"level":"info","message":"::ffff:127.0.0.1 - - [12/Feb/2026:19:28:24 +0000] \"POST /api/auth/register HTTP/1.1\" 500 124 \"-\" \"-\"","timestamp":"2026-02-12T19:28:24.471Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:04:11 +0000] \"POST /api/auth/register HTTP/1.1\" 201 206 \"-\" \"-\"","timestamp":"2026-02-19T20:04:11.918Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:04:12 +0000] \"POST /api/auth/login HTTP/1.1\" 200 457 \"-\" \"-\"","timestamp":"2026-02-19T20:04:12.058Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:04:12 +0000] \"POST /api/auth/register HTTP/1.1\" 201 206 \"-\" \"-\"","timestamp":"2026-02-19T20:04:12.275Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:04:12 +0000] \"POST /api/auth/login HTTP/1.1\" 200 457 \"-\" \"-\"","timestamp":"2026-02-19T20:04:12.421Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:04:22 +0000] \"GET /api/news?page=1&limit=5 HTTP/1.1\" 200 1927 \"-\" \"-\"","timestamp":"2026-02-19T20:04:22.535Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:04:22 +0000] \"GET /api/news?search=prueba HTTP/1.1\" 200 4939 \"-\" \"-\"","timestamp":"2026-02-19T20:04:22.622Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-19T20:04:22.639Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:04:22 +0000] \"POST /api/news HTTP/1.1\" 401 62 \"-\" \"-\"","timestamp":"2026-02-19T20:04:22.658Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-19T20:04:22.670Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:04:22 +0000] \"POST /api/news HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-19T20:04:22.687Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:04:22 +0000] \"POST /api/news HTTP/1.1\" 400 123 \"-\" \"-\"","timestamp":"2026-02-19T20:04:22.708Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"News\" - PUT /api/news/undefined","timestamp":"2026-02-19T20:04:22.733Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:04:22 +0000] \"PUT /api/news/undefined HTTP/1.1\" 500 126 \"-\" \"-\"","timestamp":"2026-02-19T20:04:22.742Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/undefined","timestamp":"2026-02-19T20:04:22.753Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:04:22 +0000] \"DELETE /api/news/undefined HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-19T20:04:22.766Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:04:22 +0000] \"PUT /api/news/000000000000000000000000 HTTP/1.1\" 404 51 \"-\" \"-\"","timestamp":"2026-02-19T20:04:22.846Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/000000000000000000000000","timestamp":"2026-02-19T20:04:22.858Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:04:22 +0000] \"DELETE /api/news/000000000000000000000000 HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-19T20:04:22.869Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:04:24 +0000] \"POST /api/auth/register HTTP/1.1\" 201 202 \"-\" \"-\"","timestamp":"2026-02-19T20:04:24.935Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:04:25 +0000] \"POST /api/auth/login HTTP/1.1\" 200 450 \"-\" \"-\"","timestamp":"2026-02-19T20:04:25.068Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-19T20:04:25.195Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:04:25 +0000] \"POST /api/auth/login HTTP/1.1\" 500 53 \"-\" \"-\"","timestamp":"2026-02-19T20:04:25.203Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-19T20:04:25.271Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:04:25 +0000] \"POST /api/auth/register HTTP/1.1\" 500 58 \"-\" \"-\"","timestamp":"2026-02-19T20:04:25.276Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-19T20:04:25.355Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:04:25 +0000] \"POST /api/auth/register HTTP/1.1\" 500 124 \"-\" \"-\"","timestamp":"2026-02-19T20:04:25.362Z"}
+{"level":"error","message":"Client must be connected before running operations - POST /api/news","timestamp":"2026-02-19T20:04:35.258Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:04:35 +0000] \"POST /api/news HTTP/1.1\" 500 80 \"-\" \"-\"","timestamp":"2026-02-19T20:04:35.262Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:22:28 +0000] \"POST /api/auth/register HTTP/1.1\" 201 206 \"-\" \"-\"","timestamp":"2026-02-19T20:22:28.663Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:22:28 +0000] \"POST /api/auth/login HTTP/1.1\" 200 457 \"-\" \"-\"","timestamp":"2026-02-19T20:22:28.800Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:22:29 +0000] \"POST /api/auth/register HTTP/1.1\" 201 206 \"-\" \"-\"","timestamp":"2026-02-19T20:22:29.026Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:22:29 +0000] \"POST /api/auth/login HTTP/1.1\" 200 457 \"-\" \"-\"","timestamp":"2026-02-19T20:22:29.157Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:22:39 +0000] \"GET /api/news?page=1&limit=5 HTTP/1.1\" 200 1927 \"-\" \"-\"","timestamp":"2026-02-19T20:22:39.264Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:22:39 +0000] \"GET /api/news?search=prueba HTTP/1.1\" 200 4939 \"-\" \"-\"","timestamp":"2026-02-19T20:22:39.347Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-19T20:22:39.362Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:22:39 +0000] \"POST /api/news HTTP/1.1\" 401 62 \"-\" \"-\"","timestamp":"2026-02-19T20:22:39.379Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-19T20:22:39.396Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:22:39 +0000] \"POST /api/news HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-19T20:22:39.410Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:22:39 +0000] \"POST /api/news HTTP/1.1\" 400 123 \"-\" \"-\"","timestamp":"2026-02-19T20:22:39.432Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"News\" - PUT /api/news/undefined","timestamp":"2026-02-19T20:22:39.445Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:22:39 +0000] \"PUT /api/news/undefined HTTP/1.1\" 500 126 \"-\" \"-\"","timestamp":"2026-02-19T20:22:39.453Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/undefined","timestamp":"2026-02-19T20:22:39.466Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:22:39 +0000] \"DELETE /api/news/undefined HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-19T20:22:39.480Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:22:39 +0000] \"PUT /api/news/000000000000000000000000 HTTP/1.1\" 404 51 \"-\" \"-\"","timestamp":"2026-02-19T20:22:39.568Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/000000000000000000000000","timestamp":"2026-02-19T20:22:39.589Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:22:39 +0000] \"DELETE /api/news/000000000000000000000000 HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-19T20:22:39.599Z"}
+{"level":"error","message":"Client must be connected before running operations - POST /api/news","timestamp":"2026-02-19T20:22:40.185Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:22:40 +0000] \"POST /api/news HTTP/1.1\" 500 80 \"-\" \"-\"","timestamp":"2026-02-19T20:22:40.197Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:22:41 +0000] \"POST /api/auth/register HTTP/1.1\" 201 202 \"-\" \"-\"","timestamp":"2026-02-19T20:22:41.807Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:22:41 +0000] \"POST /api/auth/login HTTP/1.1\" 200 450 \"-\" \"-\"","timestamp":"2026-02-19T20:22:41.941Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-19T20:22:42.089Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:22:42 +0000] \"POST /api/auth/login HTTP/1.1\" 500 53 \"-\" \"-\"","timestamp":"2026-02-19T20:22:42.097Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-19T20:22:42.168Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:22:42 +0000] \"POST /api/auth/register HTTP/1.1\" 500 58 \"-\" \"-\"","timestamp":"2026-02-19T20:22:42.173Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-19T20:22:42.239Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2026:20:22:42 +0000] \"POST /api/auth/register HTTP/1.1\" 500 124 \"-\" \"-\"","timestamp":"2026-02-19T20:22:42.247Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:13:30:16 +0000] \"POST /api/auth/register HTTP/1.1\" 201 202 \"-\" \"-\"","timestamp":"2026-02-20T13:30:16.403Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:13:30:16 +0000] \"POST /api/auth/login HTTP/1.1\" 200 450 \"-\" \"-\"","timestamp":"2026-02-20T13:30:16.536Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-20T13:30:16.661Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:13:30:16 +0000] \"POST /api/auth/login HTTP/1.1\" 500 53 \"-\" \"-\"","timestamp":"2026-02-20T13:30:16.669Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-20T13:30:16.741Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:13:30:16 +0000] \"POST /api/auth/register HTTP/1.1\" 500 58 \"-\" \"-\"","timestamp":"2026-02-20T13:30:16.748Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-20T13:30:16.831Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:13:30:16 +0000] \"POST /api/auth/register HTTP/1.1\" 500 124 \"-\" \"-\"","timestamp":"2026-02-20T13:30:16.839Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:13:45 +0000] \"POST /api/auth/register HTTP/1.1\" 201 206 \"-\" \"-\"","timestamp":"2026-02-20T20:13:45.581Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:13:45 +0000] \"POST /api/auth/login HTTP/1.1\" 200 457 \"-\" \"-\"","timestamp":"2026-02-20T20:13:45.710Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:13:45 +0000] \"POST /api/auth/register HTTP/1.1\" 201 206 \"-\" \"-\"","timestamp":"2026-02-20T20:13:45.899Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:13:46 +0000] \"POST /api/auth/login HTTP/1.1\" 200 457 \"-\" \"-\"","timestamp":"2026-02-20T20:13:46.036Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:13:56 +0000] \"GET /api/news?page=1&limit=5 HTTP/1.1\" 200 1927 \"-\" \"-\"","timestamp":"2026-02-20T20:13:56.128Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:13:56 +0000] \"GET /api/news?search=prueba HTTP/1.1\" 200 4939 \"-\" \"-\"","timestamp":"2026-02-20T20:13:56.224Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-20T20:13:56.238Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:13:56 +0000] \"POST /api/news HTTP/1.1\" 401 62 \"-\" \"-\"","timestamp":"2026-02-20T20:13:56.259Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-20T20:13:56.284Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:13:56 +0000] \"POST /api/news HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-20T20:13:56.301Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:13:56 +0000] \"POST /api/news HTTP/1.1\" 400 123 \"-\" \"-\"","timestamp":"2026-02-20T20:13:56.332Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"News\" - PUT /api/news/undefined","timestamp":"2026-02-20T20:13:56.349Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:13:56 +0000] \"PUT /api/news/undefined HTTP/1.1\" 500 126 \"-\" \"-\"","timestamp":"2026-02-20T20:13:56.358Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/undefined","timestamp":"2026-02-20T20:13:56.377Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:13:56 +0000] \"DELETE /api/news/undefined HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-20T20:13:56.401Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:13:56 +0000] \"PUT /api/news/000000000000000000000000 HTTP/1.1\" 404 51 \"-\" \"-\"","timestamp":"2026-02-20T20:13:56.479Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/000000000000000000000000","timestamp":"2026-02-20T20:13:56.492Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:13:56 +0000] \"DELETE /api/news/000000000000000000000000 HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-20T20:13:56.504Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:13:58 +0000] \"POST /api/auth/register HTTP/1.1\" 201 202 \"-\" \"-\"","timestamp":"2026-02-20T20:13:58.581Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:13:58 +0000] \"POST /api/auth/login HTTP/1.1\" 200 450 \"-\" \"-\"","timestamp":"2026-02-20T20:13:58.746Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-20T20:13:58.882Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:13:58 +0000] \"POST /api/auth/login HTTP/1.1\" 401 53 \"-\" \"-\"","timestamp":"2026-02-20T20:13:58.891Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-20T20:13:58.969Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:13:58 +0000] \"POST /api/auth/register HTTP/1.1\" 400 58 \"-\" \"-\"","timestamp":"2026-02-20T20:13:58.977Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-20T20:13:59.061Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:13:59 +0000] \"POST /api/auth/register HTTP/1.1\" 400 124 \"-\" \"-\"","timestamp":"2026-02-20T20:13:59.071Z"}
+{"level":"error","message":"Client must be connected before running operations - POST /api/news","timestamp":"2026-02-20T20:14:05.385Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:14:05 +0000] \"POST /api/news HTTP/1.1\" 500 80 \"-\" \"-\"","timestamp":"2026-02-20T20:14:05.388Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:26:00 +0000] \"POST /api/auth/register HTTP/1.1\" 201 206 \"-\" \"-\"","timestamp":"2026-02-20T20:26:00.651Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:26:01 +0000] \"POST /api/auth/login HTTP/1.1\" 200 457 \"-\" \"-\"","timestamp":"2026-02-20T20:26:01.092Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:26:01 +0000] \"POST /api/auth/register HTTP/1.1\" 201 206 \"-\" \"-\"","timestamp":"2026-02-20T20:26:01.368Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:26:01 +0000] \"POST /api/auth/login HTTP/1.1\" 200 457 \"-\" \"-\"","timestamp":"2026-02-20T20:26:01.572Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:26:11 +0000] \"GET /api/news?page=1&limit=5 HTTP/1.1\" 200 1927 \"-\" \"-\"","timestamp":"2026-02-20T20:26:11.703Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:26:11 +0000] \"GET /api/news?search=prueba HTTP/1.1\" 200 4939 \"-\" \"-\"","timestamp":"2026-02-20T20:26:11.782Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-20T20:26:11.797Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:26:11 +0000] \"POST /api/news HTTP/1.1\" 401 62 \"-\" \"-\"","timestamp":"2026-02-20T20:26:11.814Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-20T20:26:11.836Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:26:11 +0000] \"POST /api/news HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-20T20:26:11.846Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:26:11 +0000] \"POST /api/news HTTP/1.1\" 400 123 \"-\" \"-\"","timestamp":"2026-02-20T20:26:11.870Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"News\" - PUT /api/news/undefined","timestamp":"2026-02-20T20:26:11.901Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:26:11 +0000] \"PUT /api/news/undefined HTTP/1.1\" 500 126 \"-\" \"-\"","timestamp":"2026-02-20T20:26:11.915Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/undefined","timestamp":"2026-02-20T20:26:11.931Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:26:11 +0000] \"DELETE /api/news/undefined HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-20T20:26:11.945Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:26:12 +0000] \"PUT /api/news/000000000000000000000000 HTTP/1.1\" 404 51 \"-\" \"-\"","timestamp":"2026-02-20T20:26:12.032Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/000000000000000000000000","timestamp":"2026-02-20T20:26:12.045Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:26:12 +0000] \"DELETE /api/news/000000000000000000000000 HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-20T20:26:12.070Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:26:14 +0000] \"POST /api/auth/register HTTP/1.1\" 201 202 \"-\" \"-\"","timestamp":"2026-02-20T20:26:14.090Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:26:14 +0000] \"POST /api/auth/login HTTP/1.1\" 200 450 \"-\" \"-\"","timestamp":"2026-02-20T20:26:14.243Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-20T20:26:14.377Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:26:14 +0000] \"POST /api/auth/login HTTP/1.1\" 401 53 \"-\" \"-\"","timestamp":"2026-02-20T20:26:14.386Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-20T20:26:14.457Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:26:14 +0000] \"POST /api/auth/register HTTP/1.1\" 400 58 \"-\" \"-\"","timestamp":"2026-02-20T20:26:14.464Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-20T20:26:14.535Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:26:14 +0000] \"POST /api/auth/register HTTP/1.1\" 400 124 \"-\" \"-\"","timestamp":"2026-02-20T20:26:14.543Z"}
+{"level":"error","message":"Client must be connected before running operations - POST /api/news","timestamp":"2026-02-20T20:26:29.415Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:26:29 +0000] \"POST /api/news HTTP/1.1\" 500 80 \"-\" \"-\"","timestamp":"2026-02-20T20:26:29.421Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:36:09 +0000] \"POST /api/auth/register HTTP/1.1\" 201 206 \"-\" \"-\"","timestamp":"2026-02-20T20:36:09.054Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:36:09 +0000] \"POST /api/auth/login HTTP/1.1\" 200 457 \"-\" \"-\"","timestamp":"2026-02-20T20:36:09.194Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:36:09 +0000] \"POST /api/auth/register HTTP/1.1\" 201 206 \"-\" \"-\"","timestamp":"2026-02-20T20:36:09.384Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:36:09 +0000] \"POST /api/auth/login HTTP/1.1\" 200 457 \"-\" \"-\"","timestamp":"2026-02-20T20:36:09.531Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:36:19 +0000] \"GET /api/news?page=1&limit=5 HTTP/1.1\" 200 1927 \"-\" \"-\"","timestamp":"2026-02-20T20:36:19.635Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:36:19 +0000] \"GET /api/news?search=prueba HTTP/1.1\" 200 4939 \"-\" \"-\"","timestamp":"2026-02-20T20:36:19.715Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-20T20:36:19.731Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:36:19 +0000] \"POST /api/news HTTP/1.1\" 401 62 \"-\" \"-\"","timestamp":"2026-02-20T20:36:19.747Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-20T20:36:19.762Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:36:19 +0000] \"POST /api/news HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-20T20:36:19.782Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:36:19 +0000] \"POST /api/news HTTP/1.1\" 400 123 \"-\" \"-\"","timestamp":"2026-02-20T20:36:19.799Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"News\" - PUT /api/news/undefined","timestamp":"2026-02-20T20:36:19.826Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:36:19 +0000] \"PUT /api/news/undefined HTTP/1.1\" 500 126 \"-\" \"-\"","timestamp":"2026-02-20T20:36:19.833Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/undefined","timestamp":"2026-02-20T20:36:19.846Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:36:19 +0000] \"DELETE /api/news/undefined HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-20T20:36:19.860Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:36:19 +0000] \"PUT /api/news/000000000000000000000000 HTTP/1.1\" 404 51 \"-\" \"-\"","timestamp":"2026-02-20T20:36:19.932Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/000000000000000000000000","timestamp":"2026-02-20T20:36:19.949Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:36:19 +0000] \"DELETE /api/news/000000000000000000000000 HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-20T20:36:19.961Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:36:22 +0000] \"POST /api/auth/register HTTP/1.1\" 201 202 \"-\" \"-\"","timestamp":"2026-02-20T20:36:22.002Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:36:22 +0000] \"POST /api/auth/login HTTP/1.1\" 200 450 \"-\" \"-\"","timestamp":"2026-02-20T20:36:22.156Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-20T20:36:22.287Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:36:22 +0000] \"POST /api/auth/login HTTP/1.1\" 401 53 \"-\" \"-\"","timestamp":"2026-02-20T20:36:22.296Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-20T20:36:22.372Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:36:22 +0000] \"POST /api/auth/register HTTP/1.1\" 400 58 \"-\" \"-\"","timestamp":"2026-02-20T20:36:22.378Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-20T20:36:22.444Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:36:22 +0000] \"POST /api/auth/register HTTP/1.1\" 400 124 \"-\" \"-\"","timestamp":"2026-02-20T20:36:22.451Z"}
+{"level":"error","message":"Client must be connected before running operations - POST /api/news","timestamp":"2026-02-20T20:36:40.337Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:20:36:40 +0000] \"POST /api/news HTTP/1.1\" 500 80 \"-\" \"-\"","timestamp":"2026-02-20T20:36:40.342Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:18:29 +0000] \"POST /api/auth/register HTTP/1.1\" 201 206 \"-\" \"-\"","timestamp":"2026-02-20T21:18:29.550Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:18:29 +0000] \"POST /api/auth/login HTTP/1.1\" 200 457 \"-\" \"-\"","timestamp":"2026-02-20T21:18:29.719Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:18:29 +0000] \"POST /api/auth/register HTTP/1.1\" 201 206 \"-\" \"-\"","timestamp":"2026-02-20T21:18:29.910Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:18:30 +0000] \"POST /api/auth/login HTTP/1.1\" 200 457 \"-\" \"-\"","timestamp":"2026-02-20T21:18:30.033Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:18:40 +0000] \"GET /api/news?page=1&limit=5 HTTP/1.1\" 200 1927 \"-\" \"-\"","timestamp":"2026-02-20T21:18:40.137Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:18:40 +0000] \"GET /api/news?search=prueba HTTP/1.1\" 200 4939 \"-\" \"-\"","timestamp":"2026-02-20T21:18:40.212Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-20T21:18:40.229Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:18:40 +0000] \"POST /api/news HTTP/1.1\" 401 62 \"-\" \"-\"","timestamp":"2026-02-20T21:18:40.240Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-20T21:18:40.258Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:18:40 +0000] \"POST /api/news HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-20T21:18:40.273Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:18:40 +0000] \"POST /api/news HTTP/1.1\" 400 123 \"-\" \"-\"","timestamp":"2026-02-20T21:18:40.291Z"}
+{"level":"error","message":"News is not defined - PUT /api/news/undefined","timestamp":"2026-02-20T21:18:40.313Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:18:40 +0000] \"PUT /api/news/undefined HTTP/1.1\" 500 49 \"-\" \"-\"","timestamp":"2026-02-20T21:18:40.319Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/undefined","timestamp":"2026-02-20T21:18:40.331Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:18:40 +0000] \"DELETE /api/news/undefined HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-20T21:18:40.342Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:18:40 +0000] \"PUT /api/news/000000000000000000000000 HTTP/1.1\" 400 135 \"-\" \"-\"","timestamp":"2026-02-20T21:18:40.363Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/000000000000000000000000","timestamp":"2026-02-20T21:18:40.375Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:18:40 +0000] \"DELETE /api/news/000000000000000000000000 HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-20T21:18:40.397Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:18:42 +0000] \"POST /api/auth/register HTTP/1.1\" 201 202 \"-\" \"-\"","timestamp":"2026-02-20T21:18:42.789Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:18:42 +0000] \"POST /api/auth/login HTTP/1.1\" 200 450 \"-\" \"-\"","timestamp":"2026-02-20T21:18:42.923Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-20T21:18:43.062Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:18:43 +0000] \"POST /api/auth/login HTTP/1.1\" 401 53 \"-\" \"-\"","timestamp":"2026-02-20T21:18:43.070Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-20T21:18:43.187Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:18:43 +0000] \"POST /api/auth/register HTTP/1.1\" 400 58 \"-\" \"-\"","timestamp":"2026-02-20T21:18:43.192Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-20T21:18:43.257Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:18:43 +0000] \"POST /api/auth/register HTTP/1.1\" 400 124 \"-\" \"-\"","timestamp":"2026-02-20T21:18:43.264Z"}
+{"level":"error","message":"invalid json response body at https://router.huggingface.co/hf-inference/models/csebuetnlp/mT5_multilingual_XLSum reason: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON - POST /api/news","timestamp":"2026-02-20T21:20:30.450Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:20:30 +0000] \"POST /api/news HTTP/1.1\" 500 209 \"-\" \"-\"","timestamp":"2026-02-20T21:20:30.455Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:36:51 +0000] \"POST /api/auth/register HTTP/1.1\" 201 206 \"-\" \"-\"","timestamp":"2026-02-20T21:36:51.306Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:36:51 +0000] \"POST /api/auth/login HTTP/1.1\" 200 457 \"-\" \"-\"","timestamp":"2026-02-20T21:36:51.444Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:36:51 +0000] \"POST /api/auth/register HTTP/1.1\" 201 206 \"-\" \"-\"","timestamp":"2026-02-20T21:36:51.640Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:36:51 +0000] \"POST /api/auth/login HTTP/1.1\" 200 457 \"-\" \"-\"","timestamp":"2026-02-20T21:36:51.781Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:36:51 +0000] \"POST /api/news HTTP/1.1\" 201 182 \"-\" \"-\"","timestamp":"2026-02-20T21:36:51.872Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:36:51 +0000] \"GET /api/news?page=1&limit=5 HTTP/1.1\" 200 911 \"-\" \"-\"","timestamp":"2026-02-20T21:36:51.941Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:36:52 +0000] \"GET /api/news?search=prueba HTTP/1.1\" 200 1416 \"-\" \"-\"","timestamp":"2026-02-20T21:36:52.020Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-20T21:36:52.037Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:36:52 +0000] \"POST /api/news HTTP/1.1\" 401 62 \"-\" \"-\"","timestamp":"2026-02-20T21:36:52.053Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-20T21:36:52.089Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:36:52 +0000] \"POST /api/news HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-20T21:36:52.100Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:36:52 +0000] \"POST /api/news HTTP/1.1\" 400 123 \"-\" \"-\"","timestamp":"2026-02-20T21:36:52.114Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:36:52 +0000] \"PUT /api/news/6998d3f3624a5033b19246e4 HTTP/1.1\" 200 178 \"-\" \"-\"","timestamp":"2026-02-20T21:36:52.198Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/6998d3f3624a5033b19246e4","timestamp":"2026-02-20T21:36:52.227Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:36:52 +0000] \"DELETE /api/news/6998d3f3624a5033b19246e4 HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-20T21:36:52.239Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:36:52 +0000] \"PUT /api/news/000000000000000000000000 HTTP/1.1\" 400 135 \"-\" \"-\"","timestamp":"2026-02-20T21:36:52.258Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/000000000000000000000000","timestamp":"2026-02-20T21:36:52.273Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:36:52 +0000] \"DELETE /api/news/000000000000000000000000 HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-20T21:36:52.286Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:36:54 +0000] \"POST /api/auth/register HTTP/1.1\" 201 202 \"-\" \"-\"","timestamp":"2026-02-20T21:36:54.297Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:36:54 +0000] \"POST /api/auth/login HTTP/1.1\" 200 450 \"-\" \"-\"","timestamp":"2026-02-20T21:36:54.431Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-20T21:36:54.557Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:36:54 +0000] \"POST /api/auth/login HTTP/1.1\" 401 53 \"-\" \"-\"","timestamp":"2026-02-20T21:36:54.567Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-20T21:36:54.639Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:36:54 +0000] \"POST /api/auth/register HTTP/1.1\" 400 58 \"-\" \"-\"","timestamp":"2026-02-20T21:36:54.644Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-20T21:36:54.708Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:36:54 +0000] \"POST /api/auth/register HTTP/1.1\" 400 124 \"-\" \"-\"","timestamp":"2026-02-20T21:36:54.716Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:44:30 +0000] \"POST /api/auth/register HTTP/1.1\" 201 206 \"-\" \"-\"","timestamp":"2026-02-20T21:44:30.194Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:44:30 +0000] \"POST /api/auth/login HTTP/1.1\" 200 457 \"-\" \"-\"","timestamp":"2026-02-20T21:44:30.327Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:44:30 +0000] \"POST /api/auth/register HTTP/1.1\" 201 206 \"-\" \"-\"","timestamp":"2026-02-20T21:44:30.515Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:44:30 +0000] \"POST /api/auth/login HTTP/1.1\" 200 457 \"-\" \"-\"","timestamp":"2026-02-20T21:44:30.651Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:44:30 +0000] \"POST /api/news HTTP/1.1\" 201 182 \"-\" \"-\"","timestamp":"2026-02-20T21:44:30.732Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:44:30 +0000] \"GET /api/news?page=1&limit=5 HTTP/1.1\" 200 911 \"-\" \"-\"","timestamp":"2026-02-20T21:44:30.813Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:44:30 +0000] \"GET /api/news?search=prueba HTTP/1.1\" 200 1416 \"-\" \"-\"","timestamp":"2026-02-20T21:44:30.884Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-20T21:44:30.899Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:44:30 +0000] \"POST /api/news HTTP/1.1\" 401 62 \"-\" \"-\"","timestamp":"2026-02-20T21:44:30.912Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-20T21:44:30.925Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:44:30 +0000] \"POST /api/news HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-20T21:44:30.938Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:44:30 +0000] \"POST /api/news HTTP/1.1\" 400 123 \"-\" \"-\"","timestamp":"2026-02-20T21:44:30.968Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:44:31 +0000] \"PUT /api/news/6998d5be626779c3ef579d0b HTTP/1.1\" 200 178 \"-\" \"-\"","timestamp":"2026-02-20T21:44:31.043Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:44:31 +0000] \"DELETE /api/news/6998d5be626779c3ef579d0b HTTP/1.1\" 200 60 \"-\" \"-\"","timestamp":"2026-02-20T21:44:31.114Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:44:31 +0000] \"PUT /api/news/000000000000000000000000 HTTP/1.1\" 400 135 \"-\" \"-\"","timestamp":"2026-02-20T21:44:31.129Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:44:31 +0000] \"DELETE /api/news/000000000000000000000000 HTTP/1.1\" 404 51 \"-\" \"-\"","timestamp":"2026-02-20T21:44:31.208Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:44:33 +0000] \"POST /api/auth/register HTTP/1.1\" 201 202 \"-\" \"-\"","timestamp":"2026-02-20T21:44:33.037Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:44:33 +0000] \"POST /api/auth/login HTTP/1.1\" 200 450 \"-\" \"-\"","timestamp":"2026-02-20T21:44:33.168Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-20T21:44:33.311Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:44:33 +0000] \"POST /api/auth/login HTTP/1.1\" 401 53 \"-\" \"-\"","timestamp":"2026-02-20T21:44:33.322Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-20T21:44:33.390Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:44:33 +0000] \"POST /api/auth/register HTTP/1.1\" 400 58 \"-\" \"-\"","timestamp":"2026-02-20T21:44:33.395Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-20T21:44:33.461Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:44:33 +0000] \"POST /api/auth/register HTTP/1.1\" 400 124 \"-\" \"-\"","timestamp":"2026-02-20T21:44:33.470Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:27 +0000] \"POST /api/auth/register HTTP/1.1\" 201 206 \"-\" \"-\"","timestamp":"2026-02-20T21:54:27.831Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:27 +0000] \"POST /api/auth/login HTTP/1.1\" 200 457 \"-\" \"-\"","timestamp":"2026-02-20T21:54:27.967Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:28 +0000] \"POST /api/auth/register HTTP/1.1\" 201 206 \"-\" \"-\"","timestamp":"2026-02-20T21:54:28.156Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:28 +0000] \"POST /api/auth/login HTTP/1.1\" 200 457 \"-\" \"-\"","timestamp":"2026-02-20T21:54:28.296Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:28 +0000] \"POST /api/news HTTP/1.1\" 201 182 \"-\" \"-\"","timestamp":"2026-02-20T21:54:28.394Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:28 +0000] \"GET /api/news?page=1&limit=5 HTTP/1.1\" 200 911 \"-\" \"-\"","timestamp":"2026-02-20T21:54:28.463Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:28 +0000] \"GET /api/news?search=prueba HTTP/1.1\" 200 1416 \"-\" \"-\"","timestamp":"2026-02-20T21:54:28.534Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-20T21:54:28.545Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:28 +0000] \"POST /api/news HTTP/1.1\" 401 62 \"-\" \"-\"","timestamp":"2026-02-20T21:54:28.560Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-20T21:54:28.589Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:28 +0000] \"POST /api/news HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-20T21:54:28.598Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:28 +0000] \"POST /api/news HTTP/1.1\" 400 123 \"-\" \"-\"","timestamp":"2026-02-20T21:54:28.612Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:28 +0000] \"PUT /api/news/6998d8147ee7aa2c431301bb HTTP/1.1\" 200 178 \"-\" \"-\"","timestamp":"2026-02-20T21:54:28.701Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:28 +0000] \"DELETE /api/news/6998d8147ee7aa2c431301bb HTTP/1.1\" 200 60 \"-\" \"-\"","timestamp":"2026-02-20T21:54:28.773Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:28 +0000] \"PUT /api/news/000000000000000000000000 HTTP/1.1\" 404 51 \"-\" \"-\"","timestamp":"2026-02-20T21:54:28.849Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:28 +0000] \"DELETE /api/news/000000000000000000000000 HTTP/1.1\" 404 51 \"-\" \"-\"","timestamp":"2026-02-20T21:54:28.917Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:30 +0000] \"POST /api/auth/register HTTP/1.1\" 201 202 \"-\" \"-\"","timestamp":"2026-02-20T21:54:30.775Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:30 +0000] \"POST /api/auth/login HTTP/1.1\" 200 450 \"-\" \"-\"","timestamp":"2026-02-20T21:54:30.915Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-20T21:54:31.045Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:31 +0000] \"POST /api/auth/login HTTP/1.1\" 401 53 \"-\" \"-\"","timestamp":"2026-02-20T21:54:31.052Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-20T21:54:31.122Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:31 +0000] \"POST /api/auth/register HTTP/1.1\" 400 58 \"-\" \"-\"","timestamp":"2026-02-20T21:54:31.127Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-20T21:54:31.200Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:31 +0000] \"POST /api/auth/register HTTP/1.1\" 400 124 \"-\" \"-\"","timestamp":"2026-02-20T21:54:31.209Z"}

@@ -24,3 +24,77 @@
 {"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-12T19:28:24.299Z"}
 {"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-12T19:28:24.379Z"}
 {"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-12T19:28:24.464Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-19T20:04:22.639Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-19T20:04:22.670Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"News\" - PUT /api/news/undefined","timestamp":"2026-02-19T20:04:22.733Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/undefined","timestamp":"2026-02-19T20:04:22.753Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/000000000000000000000000","timestamp":"2026-02-19T20:04:22.858Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-19T20:04:25.195Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-19T20:04:25.271Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-19T20:04:25.355Z"}
+{"level":"error","message":"Client must be connected before running operations - POST /api/news","timestamp":"2026-02-19T20:04:35.258Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-19T20:22:39.362Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-19T20:22:39.396Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"News\" - PUT /api/news/undefined","timestamp":"2026-02-19T20:22:39.445Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/undefined","timestamp":"2026-02-19T20:22:39.466Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/000000000000000000000000","timestamp":"2026-02-19T20:22:39.589Z"}
+{"level":"error","message":"Client must be connected before running operations - POST /api/news","timestamp":"2026-02-19T20:22:40.185Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-19T20:22:42.089Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-19T20:22:42.168Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-19T20:22:42.239Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-20T13:30:16.661Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-20T13:30:16.741Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-20T13:30:16.831Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-20T20:13:56.238Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-20T20:13:56.284Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"News\" - PUT /api/news/undefined","timestamp":"2026-02-20T20:13:56.349Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/undefined","timestamp":"2026-02-20T20:13:56.377Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/000000000000000000000000","timestamp":"2026-02-20T20:13:56.492Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-20T20:13:58.882Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-20T20:13:58.969Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-20T20:13:59.061Z"}
+{"level":"error","message":"Client must be connected before running operations - POST /api/news","timestamp":"2026-02-20T20:14:05.385Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-20T20:26:11.797Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-20T20:26:11.836Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"News\" - PUT /api/news/undefined","timestamp":"2026-02-20T20:26:11.901Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/undefined","timestamp":"2026-02-20T20:26:11.931Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/000000000000000000000000","timestamp":"2026-02-20T20:26:12.045Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-20T20:26:14.377Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-20T20:26:14.457Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-20T20:26:14.535Z"}
+{"level":"error","message":"Client must be connected before running operations - POST /api/news","timestamp":"2026-02-20T20:26:29.415Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-20T20:36:19.731Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-20T20:36:19.762Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"News\" - PUT /api/news/undefined","timestamp":"2026-02-20T20:36:19.826Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/undefined","timestamp":"2026-02-20T20:36:19.846Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/000000000000000000000000","timestamp":"2026-02-20T20:36:19.949Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-20T20:36:22.287Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-20T20:36:22.372Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-20T20:36:22.444Z"}
+{"level":"error","message":"Client must be connected before running operations - POST /api/news","timestamp":"2026-02-20T20:36:40.337Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-20T21:18:40.229Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-20T21:18:40.258Z"}
+{"level":"error","message":"News is not defined - PUT /api/news/undefined","timestamp":"2026-02-20T21:18:40.313Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/undefined","timestamp":"2026-02-20T21:18:40.331Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/000000000000000000000000","timestamp":"2026-02-20T21:18:40.375Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-20T21:18:43.062Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-20T21:18:43.187Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-20T21:18:43.257Z"}
+{"level":"error","message":"invalid json response body at https://router.huggingface.co/hf-inference/models/csebuetnlp/mT5_multilingual_XLSum reason: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON - POST /api/news","timestamp":"2026-02-20T21:20:30.450Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-20T21:36:52.037Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-20T21:36:52.089Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/6998d3f3624a5033b19246e4","timestamp":"2026-02-20T21:36:52.227Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - DELETE /api/news/000000000000000000000000","timestamp":"2026-02-20T21:36:52.273Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-20T21:36:54.557Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-20T21:36:54.639Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-20T21:36:54.708Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-20T21:44:30.899Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-20T21:44:30.925Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-20T21:44:33.311Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-20T21:44:33.390Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-20T21:44:33.461Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-20T21:54:28.545Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-20T21:54:28.589Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-20T21:54:31.045Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-20T21:54:31.122Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-20T21:54:31.200Z"}
