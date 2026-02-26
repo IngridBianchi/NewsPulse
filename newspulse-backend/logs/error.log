@@ -98,3 +98,15 @@
 {"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-20T21:54:31.045Z"}
 {"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-20T21:54:31.122Z"}
 {"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-20T21:54:31.200Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"global\" (type string) at path \"_id\" for model \"News\" - GET /api/news/global","timestamp":"2026-02-23T21:06:46.218Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"search\" (type string) at path \"_id\" for model \"News\" - GET /api/news/search?q=elecciones%20presidenciales","timestamp":"2026-02-24T18:57:42.971Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-26T20:40:47.401Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-26T20:40:47.439Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-26T20:40:52.480Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-26T20:40:52.569Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-26T20:40:52.643Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-26T20:42:01.643Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-26T20:42:01.732Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-26T20:42:01.804Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-26T20:42:04.542Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-26T20:42:04.565Z"}

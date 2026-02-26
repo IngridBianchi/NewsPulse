@@ -346,3 +346,228 @@
 {"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:31 +0000] \"POST /api/auth/register HTTP/1.1\" 400 58 \"-\" \"-\"","timestamp":"2026-02-20T21:54:31.127Z"}
 {"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-20T21:54:31.200Z"}
 {"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2026:21:54:31 +0000] \"POST /api/auth/register HTTP/1.1\" 400 124 \"-\" \"-\"","timestamp":"2026-02-20T21:54:31.209Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:05:43.869Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"global\" (type string) at path \"_id\" for model \"News\" - GET /api/news/global","timestamp":"2026-02-23T21:06:46.218Z"}
+{"level":"info","message":"::1 - - [23/Feb/2026:21:06:46 +0000] \"GET /api/news/global HTTP/1.1\" 500 123 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-23T21:06:46.223Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:08:44.394Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:08:45.896Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:08:53.268Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:08:58.133Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:09:00.488Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:09:03.525Z"}
+{"level":"info","message":"::1 - - [23/Feb/2026:21:09:08 +0000] \"GET /api/news/global HTTP/1.1\" 500 63 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-23T21:09:08.449Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:13:16.481Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:13:32.828Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:15:27.623Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:17:45.847Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:17:48.924Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:17:53.477Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:19:17.449Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:20:58.846Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:21:00.543Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:21:32.054Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:21:43.472Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:21:52.871Z"}
+{"level":"info","message":"::1 - - [23/Feb/2026:21:22:09 +0000] \"GET /api/news/global HTTP/1.1\" 200 22324 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-23T21:22:09.643Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:32:04.136Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:32:06.208Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:32:11.466Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:32:25.803Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:32:32.001Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:32:33.023Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:32:43.900Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:45:34.383Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:45:49.019Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:47:28.423Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:47:30.057Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:47:32.425Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:47:34.326Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:48:48.931Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-23T21:48:50.901Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T12:43:10.992Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:12:43:17 +0000] \"POST /api/news/65d9f1a2c1234567890abcde/summarize HTTP/1.1\" 500 49 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T12:43:17.257Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:12:44:36 +0000] \"GET /api/news/global HTTP/1.1\" 500 47 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T12:44:36.627Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T12:47:02.433Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T12:47:08.890Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T12:47:11.573Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:12:49:02 +0000] \"GET /api/news/global HTTP/1.1\" 200 22075 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T12:49:02.117Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T12:50:47.876Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T12:58:17.421Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:13:00:22 +0000] \"POST /api/news/699d9e3634714918336b15e5/summarize HTTP/1.1\" 500 207 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T13:00:22.866Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T13:44:31.429Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:13:45:25 +0000] \"POST /api/news/699d9e3634714918336b15e5/summarize HTTP/1.1\" 200 823 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T13:45:25.257Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T13:52:58.638Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T13:53:10.194Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T13:53:46.063Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T13:53:59.919Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T13:54:05.168Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:13:55:38 +0000] \"POST /api/news/699d9e3634714918336b15e5/summarize HTTP/1.1\" 200 823 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T13:55:38.822Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T14:13:11.089Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T14:16:37.886Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T14:19:09.013Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T14:19:10.898Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T14:19:12.379Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T14:20:49.190Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T14:20:56.435Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T14:21:00.878Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T14:21:10.093Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T14:21:16.393Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:14:21:45 +0000] \"GET /api/news/global HTTP/1.1\" 500 62 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T14:21:45.026Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T14:34:58.983Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:14:35:10 +0000] \"GET /api/news/global HTTP/1.1\" 500 62 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T14:35:10.300Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:14:36:04 +0000] \"GET /api/news/global HTTP/1.1\" 500 62 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T14:36:04.621Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T14:38:13.949Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T14:43:45.268Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T14:50:46.372Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T14:53:24.587Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T14:53:25.876Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T14:53:30.893Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T14:57:49.831Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T14:58:02.243Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:14:59:04 +0000] \"GET /api/news/global HTTP/1.1\" 500 77 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T14:59:04.198Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T17:17:04.740Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T17:17:05.993Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T17:17:08.560Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T17:17:47.749Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T17:17:50.975Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T17:17:53.279Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T17:18:14.657Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T17:18:38.317Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T17:18:41.378Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T17:26:50.805Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:17:29:00 +0000] \"GET /api/news/global HTTP/1.1\" 500 198 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T17:29:00.728Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T17:37:25.817Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T17:37:27.513Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T17:37:39.111Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:17:40:25 +0000] \"GET /api/news/global HTTP/1.1\" 500 69 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T17:40:25.225Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T17:44:31.483Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T17:52:45.290Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:17:53:54 +0000] \"GET /api/news/global HTTP/1.1\" 200 22223 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T17:53:54.197Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T18:10:57.722Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:18:12:36 +0000] \"GET /api/news/category/Pol%C3%ADtica HTTP/1.1\" 500 47 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T18:12:36.330Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T18:14:37.208Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T18:17:06.584Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:18:17:48 +0000] \"GET /api/news/category/Pol%C3%ADtica HTTP/1.1\" 200 4624 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T18:17:48.613Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T18:57:38.955Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"search\" (type string) at path \"_id\" for model \"News\" - GET /api/news/search?q=elecciones%20presidenciales","timestamp":"2026-02-24T18:57:42.971Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:18:57:42 +0000] \"GET /api/news/search?q=elecciones%20presidenciales HTTP/1.1\" 500 123 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T18:57:42.978Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T18:59:38.760Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T18:59:52.824Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T18:59:55.300Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T19:00:16.472Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:19:00:23 +0000] \"GET /api/news/search?q=elecciones%20presidenciales HTTP/1.1\" 500 56 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T19:00:23.747Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T19:04:21.282Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T19:04:25.844Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T19:04:37.137Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T19:04:44.331Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T19:04:49.259Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:19:05:26 +0000] \"GET /api/news/search?q=elecciones%20presidenciales HTTP/1.1\" 500 56 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T19:05:26.566Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T19:06:39.110Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T19:06:54.714Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T19:06:58.757Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T19:07:03.144Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T19:07:06.401Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T19:07:10.308Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T19:07:12.273Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:19:07:28 +0000] \"GET /api/news/search?q=elecciones%20presidenciales HTTP/1.1\" 500 216 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T19:07:28.042Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T19:08:26.609Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T19:08:30.989Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T19:08:36.188Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:19:09:38 +0000] \"GET /api/news/search?q=elecciones%20presidenciales HTTP/1.1\" 500 56 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T19:09:38.532Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T19:10:33.323Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T19:10:47.100Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:19:10:58 +0000] \"GET /api/news/search?q=elecciones%20presidenciales HTTP/1.1\" 500 56 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T19:10:58.991Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-24T19:12:01.019Z"}
+{"level":"info","message":"::1 - - [24/Feb/2026:19:12:10 +0000] \"GET /api/news/search?q=elecciones%20presidenciales HTTP/1.1\" 500 56 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-24T19:12:10.812Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T13:07:28.240Z"}
+{"level":"info","message":"::1 - - [25/Feb/2026:13:07:38 +0000] \"GET /api/news/search?q=elecciones%20presidenciales HTTP/1.1\" 500 56 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-25T13:07:38.527Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T13:12:56.041Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T13:13:05.844Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T13:13:07.542Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T13:13:10.521Z"}
+{"level":"info","message":"::1 - - [25/Feb/2026:17:50:03 +0000] \"GET /api/news/search?q=elecciones%20presidenciales HTTP/1.1\" 500 56 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-25T17:50:03.562Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T17:51:25.456Z"}
+{"level":"info","message":"::1 - - [25/Feb/2026:17:51:37 +0000] \"GET /api/news/search?q=elecciones%20presidenciales HTTP/1.1\" 500 56 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-25T17:51:37.406Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T17:52:01.624Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T17:52:03.050Z"}
+{"level":"info","message":"::1 - - [25/Feb/2026:17:52:07 +0000] \"GET /api/news/search?q=elecciones%20presidenciales HTTP/1.1\" 500 175 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-25T17:52:07.670Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T17:52:17.206Z"}
+{"level":"info","message":"::1 - - [25/Feb/2026:17:52:24 +0000] \"GET /api/news/search?q=elecciones%20presidenciales HTTP/1.1\" 500 56 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-25T17:52:24.042Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T17:53:09.644Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T17:53:14.975Z"}
+{"level":"info","message":"::1 - - [25/Feb/2026:17:53:53 +0000] \"GET /api/news/search?q=elecciones%20presidenciales HTTP/1.1\" 500 56 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-25T17:53:53.234Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T17:54:36.536Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T17:54:42.700Z"}
+{"level":"info","message":"::1 - - [25/Feb/2026:17:55:04 +0000] \"GET /api/news/search?q=elecciones%20presidenciales HTTP/1.1\" 500 56 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-25T17:55:04.297Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T18:04:37.315Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T18:04:41.839Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T18:04:43.793Z"}
+{"level":"info","message":"::1 - - [25/Feb/2026:18:04:52 +0000] \"GET /api/news/search?q=elecciones%20presidenciales HTTP/1.1\" 500 56 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-25T18:04:52.652Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T18:06:16.087Z"}
+{"level":"info","message":"::1 - - [25/Feb/2026:18:06:21 +0000] \"GET /api/news/search?q=elecciones%20presidenciales HTTP/1.1\" 500 193 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-25T18:06:21.810Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T18:06:33.664Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T18:06:41.426Z"}
+{"level":"info","message":"::1 - - [25/Feb/2026:18:06:45 +0000] \"GET /api/news/search?q=elecciones%20presidenciales HTTP/1.1\" 500 215 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-25T18:06:45.057Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T18:08:38.572Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T18:08:48.835Z"}
+{"level":"info","message":"::1 - - [25/Feb/2026:18:08:59 +0000] \"GET /api/news/search?q=elecciones%20presidenciales HTTP/1.1\" 500 56 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-25T18:08:59.965Z"}
+{"level":"info","message":"::1 - - [25/Feb/2026:18:09:12 +0000] \"GET /api/news/search?q=elecciones HTTP/1.1\" 500 56 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-25T18:09:12.067Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T18:23:51.625Z"}
+{"level":"info","message":"::1 - - [25/Feb/2026:18:24:00 +0000] \"GET /api/news/search?q=elecciones HTTP/1.1\" 500 56 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-25T18:24:00.023Z"}
+{"level":"info","message":"::1 - - [25/Feb/2026:18:26:59 +0000] \"GET /api/news/search?q=elecciones HTTP/1.1\" 500 56 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-25T18:26:59.658Z"}
+{"level":"info","message":"::1 - - [25/Feb/2026:18:36:06 +0000] \"GET /api/news/search?q=elecciones HTTP/1.1\" 500 56 \"-\" \"PostmanRuntime/7.51.1\"","timestamp":"2026-02-25T18:36:06.174Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-25T18:54:20.861Z"}
+{"level":"info","message":"✅ Variables de entorno validadas","timestamp":"2026-02-26T20:37:43.214Z"}
+{"level":"info","message":"Servidor corriendo en puerto 5000","timestamp":"2026-02-26T20:37:43.230Z"}
+{"level":"info","message":"✅ Variables de entorno validadas","timestamp":"2026-02-26T20:40:44.983Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:40:46 +0000] \"POST /api/auth/register HTTP/1.1\" 201 248 \"-\" \"-\"","timestamp":"2026-02-26T20:40:46.693Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:40:46 +0000] \"POST /api/auth/login HTTP/1.1\" 200 499 \"-\" \"-\"","timestamp":"2026-02-26T20:40:46.828Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:40:47 +0000] \"POST /api/auth/register HTTP/1.1\" 201 248 \"-\" \"-\"","timestamp":"2026-02-26T20:40:47.008Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:40:47 +0000] \"POST /api/auth/login HTTP/1.1\" 200 499 \"-\" \"-\"","timestamp":"2026-02-26T20:40:47.135Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:40:47 +0000] \"POST /api/news HTTP/1.1\" 201 148 \"-\" \"-\"","timestamp":"2026-02-26T20:40:47.236Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:40:47 +0000] \"GET /api/news?page=1&limit=5 HTTP/1.1\" 200 1540 \"-\" \"-\"","timestamp":"2026-02-26T20:40:47.317Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:40:47 +0000] \"GET /api/news?search=prueba HTTP/1.1\" 200 4939 \"-\" \"-\"","timestamp":"2026-02-26T20:40:47.389Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-26T20:40:47.401Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:40:47 +0000] \"POST /api/news HTTP/1.1\" 401 62 \"-\" \"-\"","timestamp":"2026-02-26T20:40:47.414Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-26T20:40:47.439Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:40:47 +0000] \"POST /api/news HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-26T20:40:47.448Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:40:47 +0000] \"POST /api/news HTTP/1.1\" 400 123 \"-\" \"-\"","timestamp":"2026-02-26T20:40:47.465Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:40:47 +0000] \"PUT /api/news/69a0afcf5297788dc7abd4b6 HTTP/1.1\" 200 144 \"-\" \"-\"","timestamp":"2026-02-26T20:40:47.544Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:40:47 +0000] \"DELETE /api/news/69a0afcf5297788dc7abd4b6 HTTP/1.1\" 200 60 \"-\" \"-\"","timestamp":"2026-02-26T20:40:47.622Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:40:47 +0000] \"PUT /api/news/000000000000000000000000 HTTP/1.1\" 404 51 \"-\" \"-\"","timestamp":"2026-02-26T20:40:47.696Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:40:47 +0000] \"DELETE /api/news/000000000000000000000000 HTTP/1.1\" 404 51 \"-\" \"-\"","timestamp":"2026-02-26T20:40:47.766Z"}
+{"level":"info","message":"✅ Variables de entorno validadas","timestamp":"2026-02-26T20:40:48.305Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:40:52 +0000] \"POST /api/auth/register HTTP/1.1\" 201 244 \"-\" \"-\"","timestamp":"2026-02-26T20:40:52.211Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:40:52 +0000] \"POST /api/auth/login HTTP/1.1\" 200 492 \"-\" \"-\"","timestamp":"2026-02-26T20:40:52.349Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-26T20:40:52.480Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:40:52 +0000] \"POST /api/auth/login HTTP/1.1\" 401 53 \"-\" \"-\"","timestamp":"2026-02-26T20:40:52.489Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-26T20:40:52.569Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:40:52 +0000] \"POST /api/auth/register HTTP/1.1\" 400 58 \"-\" \"-\"","timestamp":"2026-02-26T20:40:52.574Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-26T20:40:52.643Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:40:52 +0000] \"POST /api/auth/register HTTP/1.1\" 500 124 \"-\" \"-\"","timestamp":"2026-02-26T20:40:52.651Z"}
+{"level":"info","message":"✅ Variables de entorno validadas","timestamp":"2026-02-26T20:41:59.722Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:42:01 +0000] \"POST /api/auth/register HTTP/1.1\" 201 244 \"-\" \"-\"","timestamp":"2026-02-26T20:42:01.367Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:42:01 +0000] \"POST /api/auth/login HTTP/1.1\" 200 492 \"-\" \"-\"","timestamp":"2026-02-26T20:42:01.508Z"}
+{"level":"error","message":"Credenciales inválidas - POST /api/auth/login","timestamp":"2026-02-26T20:42:01.643Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:42:01 +0000] \"POST /api/auth/login HTTP/1.1\" 401 53 \"-\" \"-\"","timestamp":"2026-02-26T20:42:01.652Z"}
+{"level":"error","message":"El email ya está registrado - POST /api/auth/register","timestamp":"2026-02-26T20:42:01.732Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:42:01 +0000] \"POST /api/auth/register HTTP/1.1\" 400 58 \"-\" \"-\"","timestamp":"2026-02-26T20:42:01.737Z"}
+{"level":"error","message":"User validation failed: name: Path `name` is required., password: Path `password` is required. - POST /api/auth/register","timestamp":"2026-02-26T20:42:01.804Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:42:01 +0000] \"POST /api/auth/register HTTP/1.1\" 500 124 \"-\" \"-\"","timestamp":"2026-02-26T20:42:01.813Z"}
+{"level":"info","message":"✅ Variables de entorno validadas","timestamp":"2026-02-26T20:42:02.304Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:42:03 +0000] \"POST /api/auth/register HTTP/1.1\" 201 248 \"-\" \"-\"","timestamp":"2026-02-26T20:42:03.846Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:42:03 +0000] \"POST /api/auth/login HTTP/1.1\" 200 499 \"-\" \"-\"","timestamp":"2026-02-26T20:42:03.978Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:42:04 +0000] \"POST /api/auth/register HTTP/1.1\" 201 248 \"-\" \"-\"","timestamp":"2026-02-26T20:42:04.173Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:42:04 +0000] \"POST /api/auth/login HTTP/1.1\" 200 499 \"-\" \"-\"","timestamp":"2026-02-26T20:42:04.306Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:42:04 +0000] \"POST /api/news HTTP/1.1\" 201 148 \"-\" \"-\"","timestamp":"2026-02-26T20:42:04.378Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:42:04 +0000] \"GET /api/news?page=1&limit=5 HTTP/1.1\" 200 1540 \"-\" \"-\"","timestamp":"2026-02-26T20:42:04.451Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:42:04 +0000] \"GET /api/news?search=prueba HTTP/1.1\" 200 4939 \"-\" \"-\"","timestamp":"2026-02-26T20:42:04.523Z"}
+{"level":"error","message":"Acceso denegado, token requerido - POST /api/news","timestamp":"2026-02-26T20:42:04.542Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:42:04 +0000] \"POST /api/news HTTP/1.1\" 401 62 \"-\" \"-\"","timestamp":"2026-02-26T20:42:04.553Z"}
+{"level":"error","message":"Acceso denegado: permisos insuficientes - POST /api/news","timestamp":"2026-02-26T20:42:04.565Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:42:04 +0000] \"POST /api/news HTTP/1.1\" 403 69 \"-\" \"-\"","timestamp":"2026-02-26T20:42:04.574Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:42:04 +0000] \"POST /api/news HTTP/1.1\" 400 123 \"-\" \"-\"","timestamp":"2026-02-26T20:42:04.587Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:42:04 +0000] \"PUT /api/news/69a0b01c1a4e076dbae58cff HTTP/1.1\" 200 144 \"-\" \"-\"","timestamp":"2026-02-26T20:42:04.661Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:42:04 +0000] \"DELETE /api/news/69a0b01c1a4e076dbae58cff HTTP/1.1\" 200 60 \"-\" \"-\"","timestamp":"2026-02-26T20:42:04.739Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:42:04 +0000] \"PUT /api/news/000000000000000000000000 HTTP/1.1\" 404 51 \"-\" \"-\"","timestamp":"2026-02-26T20:42:04.811Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Feb/2026:20:42:04 +0000] \"DELETE /api/news/000000000000000000000000 HTTP/1.1\" 404 51 \"-\" \"-\"","timestamp":"2026-02-26T20:42:04.873Z"}

@@ -1,20 +1,29 @@
+import dotenv from "dotenv";
 import express from "express";
 import cors from "cors";
-import dotenv from "dotenv";
 import morgan from "morgan";
 import connectDB from "./config/db.js";
-
 import newsRoutes from "./routes/news.js";
 import authRoutes from "./routes/auth.js";
 import summaryRoutes from "./routes/summary.js";
-
 import errorHandler from "./middlewares/errorHandler.js"; 
 import logger from "./config/logger.js";
 
-
+// Cargar variables de entorno al inicio
 dotenv.config();
-connectDB();
 
+// Validar variables de entorno críticas
+const REQUIRED_ENV_VARS = ["MONGO_URI", "JWT_SECRET"];
+REQUIRED_ENV_VARS.forEach((envVar) => {
+  if (!process.env[envVar]) {
+    console.error(`❌ Variable de entorno ${envVar} no está definida`);
+    process.exit(1);
+  }
+});
+
+logger.info("✅ Variables de entorno validadas");
+
+connectDB();
 const app = express();
 app.use(cors());
 app.use(express.json());

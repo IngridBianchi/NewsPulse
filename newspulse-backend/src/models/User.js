@@ -10,6 +10,12 @@ const userSchema = new mongoose.Schema({
     enum: ["admin", "editor", "lector"],
     default: "lector", // por defecto, usuario lector
     },
+  readHistory: [{ type: mongoose.Schema.Types.ObjectId, ref: "News" }],
+  categoryPreferences: {
+    type: Map,
+    of: Number, // contador por categoría
+    default: {}
+  }
 });
 
 // Encriptar contraseña antes de guardar

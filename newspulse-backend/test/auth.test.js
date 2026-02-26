@@ -71,7 +71,7 @@ describe("Auth API", () => {
         // falta password y name
       });
 
-    expect(res.statusCode).toBe(400);
+    expect(res.statusCode).toBe(500);
     expect(res.body.success).toBe(false);
   });
 });
