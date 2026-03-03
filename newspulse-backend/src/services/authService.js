@@ -7,6 +7,15 @@ import bcryptjs from "bcryptjs";
  * @returns {Object} Interfaz del servicio
  */
 export function createAuthService(userRepo) {
+  const toSafeUser = (userDoc) => {
+    if (!userDoc) return userDoc;
+    const obj = typeof userDoc.toObject === "function" ? userDoc.toObject() : userDoc;
+    // Nunca exponer password (ni hash) hacia el cliente
+    // eslint-disable-next-line no-unused-vars
+    const { password, __v, ...safe } = obj;
+    return safe;
+  };
+
   return {
     /**
      * Registrar un nuevo usuario
@@ -21,7 +30,7 @@ export function createAuthService(userRepo) {
 
       // El pre("save") del modelo encripta la contraseña
       const user = await userRepo.create({ name, email, password, role });
-      return user;
+      return toSafeUser(user);
     },
 
     /**
@@ -48,7 +57,7 @@ export function createAuthService(userRepo) {
         { expiresIn: "1h" }
       );
 
-      return { user, token };
+      return { user: toSafeUser(user), token };
     },
   };
 }

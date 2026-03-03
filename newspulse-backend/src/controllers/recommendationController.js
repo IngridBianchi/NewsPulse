@@ -15,5 +15,21 @@ export function createRecommendationController(userService, newsService) {
         next(error);
       }
     },
+
+    async addHistory(req, res, next) {
+      try {
+        const userId = req.user.id;
+        const { newsId } = req.body;
+        if (!newsId) {
+          const error = new Error('newsId es requerido');
+          error.status = 400;
+          throw error;
+        }
+        await userService.addToReadHistory(userId, newsId);
+        res.json({ success: true });
+      } catch (error) {
+        next(error);
+      }
+    },
   };
 }

@@ -52,7 +52,15 @@ export function createNewsRepository(NewsModel) {
      * Buscar o crear (upsert)
      */
     async findOrCreate(filter, data) {
-      return await NewsModel.updateOne(filter, { $set: data }, { upsert: true });
+      return await NewsModel.findOneAndUpdate(
+        filter,
+        { $set: data },
+        {
+          upsert: true,
+          returnDocument: "after",
+          setDefaultsOnInsert: true,
+        }
+      );
     },
 
     /**
@@ -61,5 +69,10 @@ export function createNewsRepository(NewsModel) {
     async findByCategory(category) {
       return await NewsModel.find({ category });
     },
+
+     // Método para limpiar toda la colección
+    async clearAll() {
+      return await NewsModel.deleteMany({});
+    }
   };
 }

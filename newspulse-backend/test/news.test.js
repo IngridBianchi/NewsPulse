@@ -167,4 +167,45 @@ describe("News API", () => {
     expect(res.statusCode).toBe(404);
     expect(res.body.success).toBe(false);
   });
+
+  // ----------------------------------------------------------------
+  // pruebas adicionales: historial y recomendaciones
+  // ----------------------------------------------------------------
+  it("debería agregar lectura al historial y obtener recomendaciones", async () => {
+    // crear unas noticias en diferentes categorías
+    const catNews = [
+      { title: "Política 1", content: "Contenido largo", category: "Política" },
+      { title: "Política 2", content: "Contenido largo", category: "Política" },
+      { title: "Tecnología 1", content: "Contenido largo", category: "Tecnología" },
+    ];
+    for (const n of catNews) {
+      await request(app)
+        .post("/api/news")
+        .set("Authorization", `Bearer ${token}`)
+        .send(n);
+    }
+
+    // lector marca como leída la primera política
+    const all = await request(app).get("/api/news");
+    const firstPol = all.body.data.find((x) => x.category === "Política");
+    expect(firstPol).toBeDefined();
+
+    const addRes = await request(app)
+      .post("/api/user/history")
+      .set("Authorization", `Bearer ${lectorToken}`)
+      .send({ newsId: firstPol._id });
+    expect(addRes.statusCode).toBe(200);
+    expect(addRes.body.success).toBe(true);
+
+    // ahora solicitamos recomendaciones para el lector
+    const recRes = await request(app)
+      .get("/api/user/recommendations")
+      .set("Authorization", `Bearer ${lectorToken}`);
+    expect(recRes.statusCode).toBe(200);
+    expect(recRes.body.success).toBe(true);
+    // should recommend other Política news, not the one already read
+    const recs = recRes.body.recommendations;
+    expect(Array.isArray(recs)).toBe(true);
+    expect(recs.every((r) => r.category === "Política")).toBe(true);
+  });
 });

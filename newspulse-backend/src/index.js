@@ -6,6 +6,7 @@ import connectDB from "./config/db.js";
 import newsRoutes from "./routes/news.js";
 import authRoutes from "./routes/auth.js";
 import summaryRoutes from "./routes/summary.js";
+import userRoutes from "./routes/user.js";
 import errorHandler from "./middlewares/errorHandler.js"; 
 import logger from "./config/logger.js";
 
@@ -40,6 +41,7 @@ app.use(
 app.use('/api/news', newsRoutes);
 app.use('/summarize', summaryRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/user', userRoutes); // endpoints para historial y recomendaciones
 
 app.get('/', (req, res) => {
   res.send('NewsPulse API funcionando 🚀');

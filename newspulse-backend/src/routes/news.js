@@ -31,10 +31,20 @@ router.get("/global", (req, res, next) =>
 // Listar noticias
 router.get("/", (req, res, next) => newsController.list(req, res, next));
 
-// Endpoint para búsqueda
-router.get("/search", (req, res, next) =>
-  searchController.basicSearch(req, res, next)
-);
+// Endpoint para búsqueda - sin caché HTTP
+router.get("/search", (req, res, next) => {
+  // Limpiar headers de caché condicional
+  delete req.headers['if-none-match'];
+  delete req.headers['if-modified-since'];
+  
+  // Establecer headers explícitos contra caché
+  res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate, private');
+  res.setHeader('Pragma', 'no-cache');
+  res.setHeader('Expires', '0');
+  res.setHeader('ETag', '');
+  
+  searchController.basicSearch(req, res, next);
+});
 
 // Obtener noticia por ID
 router.get("/:id", (req, res, next) =>

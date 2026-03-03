@@ -7,7 +7,7 @@
   "scripts": {
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --detectOpenHandles --runInBand",
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "node src/index.js"
   },
   "keywords": [],
   "author": "Ingrid Bianchi",

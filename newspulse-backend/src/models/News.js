@@ -9,6 +9,11 @@ const newsSchema = new mongoose.Schema({
   publishedAt: Date,
   sourceName: String,
   category: String,
+  status: {
+    type: String,
+    enum: ["PUBLICADO", "BORRADOR"],
+    default: "PUBLICADO",
+  },
 });
 
 // Índice de texto para búsquedas básicas

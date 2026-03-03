@@ -15,8 +15,17 @@ export function createSearchController(newsService) {
         }
 
         const results = await newsService.search(query);
-        res.json({ success: true, data: results });
+        console.log(`Search for "${query}" returned ${results.length} results`);
+        
+        // Forzar status 200 explícito y desabilitar caché
+        return res
+          .status(200)
+          .set('Cache-Control', 'no-cache, no-store, must-revalidate')
+          .set('Pragma', 'no-cache')
+          .set('Expires', '0')
+          .json({ success: true, data: results });
       } catch (error) {
+        console.error(`Search error for query "${req.query.q}":`, error);
         next(error);
       }
     },
