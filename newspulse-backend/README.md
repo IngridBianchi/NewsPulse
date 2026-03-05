@@ -55,7 +55,7 @@ Crear archivo `.env` en la raíz del backend:
 NODE_ENV=development
 
 # Base de Datos
-MONGODB_URI=mongodb+srv://usuario:password@cluster.mongodb.net/newspulse
+MONGODB_URI=
 
 # Autenticación
 JWT_SECRET=tu_secret_jwt_super_seguro_cambiar_en_produccion
