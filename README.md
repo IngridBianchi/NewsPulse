@@ -88,7 +88,7 @@ npm install
 # Crear archivo .env en la raíz del backend
 cat > .env << EOF
 NODE_ENV=development
-MONGODB_URI=mongodb+srv://usuario:contraseña@cluster.mongodb.net/newspulse
+MONGODB_URI=
 JWT_SECRET=tu_secret_jwt_muy_seguro
 PORT=5000
 NEWS_API_KEY=tu_api_key_de_newsapi
